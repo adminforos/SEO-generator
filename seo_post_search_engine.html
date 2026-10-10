@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>SEO Post & Search Engine Studio</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a2d;--panel2:#18233a;--line:#2b3852;--text:#f3f6ff;--muted:#aab5ce;--accent:#8b5cf6;--cyan:#22d3ee;--green:#34d399}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 8% 0%,#282050 0,transparent 32%),var(--bg);font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);line-height:1.55}
+header{position:sticky;top:0;z-index:5;background:#0b1020ed;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff14;padding:15px clamp(14px,4vw,38px);display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:11px;font-weight:800}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--cyan));display:grid;place-items:center;font-size:20px}.brand small{display:block;font-size:11px;color:var(--muted);font-weight:500}.header-actions{display:flex;gap:8px;flex-wrap:wrap}
+button,.btn{border:0;border-radius:10px;padding:11px 14px;background:linear-gradient(135deg,var(--accent),#635bff);color:#fff;font-weight:750;cursor:pointer;text-decoration:none;font-size:13px;display:inline-flex;justify-content:center;align-items:center;gap:7px}button.secondary,.btn.secondary{background:#202b43;border:1px solid var(--line);color:var(--text)}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+main{max-width:1350px;margin:auto;padding:28px clamp(12px,3vw,32px) 55px}.hero{border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4vw,36px);background:linear-gradient(120deg,#171e36,#111a2e);margin-bottom:22px}.eyebrow{font-size:11px;color:#67e8f9;font-weight:850;letter-spacing:.14em}.hero h1{font-size:clamp(29px,5vw,48px);line-height:1.1;letter-spacing:-.035em;margin:12px 0}.hero h1 span{color:#a5b4fc}.hero p{color:var(--muted);max-width:780px;margin:0}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:21px;min-width:0}.panel h2{font-size:19px;margin:0 0 4px}.sub{color:var(--muted);font-size:12px;margin:0 0 18px}.section{padding:17px 0;border-top:1px solid #ffffff12}.section:first-of-type{border-top:0;padding-top:0}.section h3{font-size:14px;margin:0 0 11px;color:#dbeafe}label{display:block;font-size:12px;color:#c6d1e8;font-weight:700;margin:12px 0 6px}input,textarea,select{width:100%;background:#0b1222;color:var(--text);border:1px solid #34415c;border-radius:9px;padding:11px 12px;font:inherit;font-size:13px}textarea{min-height:130px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.hint{font-size:11px;color:#8795b1;margin-top:5px}.counter{font-size:11px;color:var(--muted);text-align:right;margin-top:4px}.scorebox{display:flex;align-items:center;gap:14px;background:#0b1222;border:1px solid var(--line);padding:14px;border-radius:12px;margin:12px 0}.ring{width:58px;height:58px;border-radius:50%;border:5px solid var(--green);display:grid;place-items:center;font-weight:850;color:#a7f3d0;flex-shrink:0}.ring.mid{border-color:#fbbf24;color:#fde68a}.ring.low{border-color:#fb7185;color:#fecdd3}.checks{display:grid;gap:8px}.check{display:flex;gap:8px;font-size:12px;color:var(--muted)}.check b{color:var(--green)}.check b.bad{color:#fda4af}.search-result{border:1px solid var(--line);border-radius:12px;padding:13px;margin:10px 0;background:#0e1628}.result-url{font-size:11px;color:#6ee7b7;overflow-wrap:anywhere}.result-title{color:#9db7ff;font-size:17px;margin:4px 0;font-weight:650}.result-desc{color:#b8c3d8;font-size:12px}.preview{background:#fff;color:#202124;border-radius:13px;padding:18px;margin-top:12px}.preview .url{font-size:12px;color:#188038}.preview .title{font-size:20px;color:#1a0dab;margin:5px 0}.preview .desc{font-size:13px;color:#4d5156}.status{font-size:11px;color:#6ee7b7}.pill{display:inline-block;background:#202b43;border:1px solid var(--line);padding:4px 8px;border-radius:99px;font-size:10px;color:#cbd5e1;margin:3px 4px 3px 0}.output{white-space:pre-wrap;overflow-wrap:anywhere;background:#0b1222;border:1px solid var(--line);padding:12px;border-radius:10px;font-size:12px;color:#d8e3f8;max-height:230px;overflow:auto}footer{text-align:center;padding:24px;color:#7f8ba5;font-size:11px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}}@media(max-width:520px){header{align-items:flex-start;flex-direction:column}.header-actions{width:100%}.header-actions button{flex:1}.row{grid-template-columns:1fr}.panel{padding:16px}}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="logo">⌕</div><div>SEO Post Studio<small>Post Writer • SEO Checker • Search Preview</small></div></div><div class="header-actions"><button class="secondary" id="reset">↻ Reset</button><button id="download">↓ Download Post HTML</button></div></header>
+<main>
+<section class="hero"><div class="eyebrow">CONTENT • SEARCH • OPTIMIZE</div><h1>SEO পোস্ট তৈরি করুন, <span>সার্চের জন্য প্রস্তুত করুন</span></h1><p>পোস্টের কনটেন্ট লিখুন, কীওয়ার্ড পরীক্ষা করুন, SEO Title ও Meta Description তৈরি করুন এবং Google-ধাঁচের সার্চ প্রিভিউ দেখুন। এই টুলের সার্চ অংশ আপনার লেখা পোস্টের মধ্যে খোঁজে—এটি সরাসরি Google-এর ফলাফল অনুসন্ধান করে না।</p></section>
+<div class="layout">
+<section class="panel">
+<h2>Post editor</h2><p class="sub">আপনার পোস্টের তথ্য লিখুন। ডান পাশের প্রিভিউ স্বয়ংক্রিয়ভাবে আপডেট হবে।</p>
+<div class="section">
+<h3>01 / Post details</h3>
+<label for="postTitle">পোস্টের শিরোনাম</label><input id="postTitle" value="How to Create an SEO Friendly Blog Post" maxlength="160">
+<label for="postBody">পোস্টের বিষয়বস্তু</label><textarea id="postBody">An SEO-friendly blog post should answer the reader's question clearly. Start with a descriptive title, use headings to organize the content, and include relevant keywords naturally.
+
+Write useful original content for your audience. Add internal links to related pages, compress images, and provide descriptive alt text. Make sure the page works well on mobile devices.
+
+Before publishing, review your meta title and description, check spelling, and make sure the page loads quickly. Search engines decide rankings using many signals, so no tool can guarantee a first-page position.</textarea>
+<div class="counter"><span id="wordCount">0</span> words · <span id="charCount">0</span> characters</div>
+<div class="row"><div><label for="category">ক্যাটাগরি</label><select id="category"><option>Blog</option><option>Technology</option><option>Gaming</option><option>Education</option><option>Business</option><option>News</option><option>Health</option><option>Travel</option></select></div><div><label for="language">পোস্টের ভাষা</label><select id="language"><option value="en">English</option><option value="bn">বাংলা</option></select></div></div>
+<label for="keywords">Focus keywords (কমা দিয়ে আলাদা করুন)</label><input id="keywords" value="SEO friendly blog post, SEO tips, content optimization">
+<div class="actions"><button id="makeTitle">✦ Generate SEO title</button><button id="makeMeta" class="secondary">Generate meta description</button></div>
+</div>
+<div class="section"><h3>02 / SEO metadata</h3>
+<label for="seoTitle">SEO Title</label><input id="seoTitle" maxlength="70" value="SEO Friendly Blog Post: Practical Tips for Better Content">
+<div class="counter"><span id="titleCount">0</span>/60 recommended characters</div>
+<label for="metaDesc">Meta Description</label><textarea id="metaDesc" maxlength="180" style="min-height:85px">Learn how to write an SEO-friendly blog post with practical tips for titles, keywords, headings, internal links, and useful original content.</textarea><div class="counter"><span id="metaCount">0</span>/160 recommended characters</div>
+<label for="canonical">Canonical URL (optional)</label><input id="canonical" type="url" placeholder="https://example.com/your-post">
+<label for="slug">Post URL slug</label><input id="slug" value="seo-friendly-blog-post">
+<div class="actions"><button id="checkSeo">✓ Check SEO</button><button id="copyMeta" class="secondary">Copy meta tags</button></div>
+<div class="scorebox"><div class="ring" id="ring">0%</div><div><strong>On-page SEO checklist</strong><div class="hint" id="scoreText">পোস্টের তথ্য অনুযায়ী চেকলিস্ট আপডেট হবে।</div></div></div><div id="checks" class="checks"></div>
+</div>
+</section>
+<section class="panel">
+<h2>Search & preview</h2><p class="sub">নিজের লেখা পোস্টের মধ্যে সার্চ করুন এবং সার্চ-রেজাল্ট প্রিভিউ দেখুন।</p>
+<div class="section">
+<h3>03 / Search your posts</h3><label for="searchQuery">পোস্টের ভেতরে কী খুঁজবেন?</label><input id="searchQuery" placeholder="যেমন: keywords, headings, SEO">
+<div class="actions"><button id="searchBtn">⌕ Search post</button><button class="secondary" id="clearSearch">Clear</button></div>
+<div id="searchResults" aria-live="polite"><div class="hint">সার্চ করার জন্য একটি শব্দ লিখুন।</div></div>
+</div>
+<div class="section"><h3>04 / Search engine snippet preview</h3><div class="preview"><div class="url" id="previewUrl">example.com/seo-friendly-blog-post</div><div class="title" id="previewTitle">SEO Friendly Blog Post: Practical Tips for Better Content</div><div class="desc" id="previewDesc">Learn how to write an SEO-friendly blog post with practical tips for titles, keywords, headings, internal links, and useful original content.</div></div><div class="hint">এটি একটি আনুমানিক প্রিভিউ। সার্চ ইঞ্জিন নিজের মতো করে title বা description পরিবর্তন করে দেখাতে পারে।</div></div>
+<div class="section"><h3>05 / Keyword report</h3><div id="keywordReport"><span class="hint">ফোকাস কীওয়ার্ড লিখলে এখানে রিপোর্ট দেখা যাবে।</span></div></div>
+<div class="section"><h3>06 / Export</h3><p class="sub">আপনার পোস্ট ও SEO metadata-সহ একটি স্বতন্ত্র HTML পেজ তৈরি করুন।</p><div class="actions"><button id="download2">↓ Download post.html</button><button class="secondary" id="copyHtml">Copy HTML source</button></div><div class="hint" id="message" role="status"></div></div>
+</section>
+</div>
+</main><footer>SEO Post Studio • Local HTML tool • SEO checks are suggestions, not a ranking guarantee.</footer>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function words(s){return s.trim()?s.trim().split(/\s+/).length:0}
+function validUrl(s){try{let u=new URL(s);return u.protocol==='https:'||u.protocol==='http:'}catch(e){return false}}
+function update(){
+let title=$('postTitle').value.trim(),body=$('postBody').value,seo=$('seoTitle').value.trim(),meta=$('metaDesc').value.trim(),slug=$('slug').value.trim(),canon=$('canonical').value.trim();
+$('wordCount').textContent=words(body);$('charCount').textContent=body.length;$('titleCount').textContent=seo.length;$('metaCount').textContent=meta.length;
+$('previewTitle').textContent=seo||title||'Post title';$('previewDesc').textContent=meta||body.slice(0,160);$('previewUrl').textContent=canon&&validUrl(canon)?new URL(canon).host+new URL(canon).pathname:'example.com/'+slug.replace(/^\/+|\/+$/g,'');
+let kws=$('keywords').value.split(',').map(s=>s.trim()).filter(Boolean),lower=(title+' '+body).toLowerCase();
+let checks=[
+['পোস্টের শিরোনাম যোগ করা হয়েছে',!!title],
+['SEO Title 30–60 অক্ষর',seo.length>=30&&seo.length<=60],
+['Meta Description 120–160 অক্ষর',meta.length>=120&&meta.length<=160],
+['পোস্টে কমপক্ষে 300 শব্দ',words(body)>=300],
+['Focus keyword পোস্টে আছে',kws.length>0&&kws.some(k=>lower.includes(k.toLowerCase()))],
+['Canonical URL সঠিক বা ফাঁকা',!canon||validUrl(canon)],
+['পোস্টে heading (H2) যোগ করা হয়েছে',/<h2[\s>]/i.test(body)]
+];
+let score=Math.round(checks.filter(c=>c[1]).length/checks.length*100);$('ring').textContent=score+'%';$('ring').className='ring '+(score<40?'low':score<80?'mid':'');$('scoreText').textContent=checks.filter(c=>c[1]).length+' / '+checks.length+'টি প্রাথমিক চেক পাস হয়েছে।';
+$('checks').innerHTML=checks.map(c=>`<div class="check"><b class="${c[1]?'':'bad'}">${c[1]?'✓':'✕'}</b><span>${c[0]}</span></div>`).join('');
+$('keywordReport').innerHTML=kws.length?kws.map(k=>{let count=(lower.match(new RegExp(escapeRegExp(k.toLowerCase()),'g'))||[]).length;return `<span class="pill">${esc(k)}</span><div class="check"><span><b>${count}</b> occurrence${count===1?'':'s'} in title and body combined</span></div>`}).join(''):'<span class="hint">ফোকাস কীওয়ার্ড লিখলে এখানে রিপোর্ট দেখা যাবে।</span>';
+}
+function escapeRegExp(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
+function postHtml(){let t=$('postTitle').value.trim()||'Untitled Post',seo=$('seoTitle').value.trim()||t,meta=$('metaDesc').value.trim(),kw=$('keywords').value.trim(),canonical=$('canonical').value.trim(),slug=$('slug').value.trim(),body=$('postBody').value;
+let content=body.split(/\n\s*\n/).map(p=>{let x=p.trim();if(!x)return '';if(/^#{1,3}\s/.test(x)){let level=(x.match(/^#+/)[0].length)+1;return `<h${Math.min(level,4)}>${esc(x.replace(/^#{1,3}\s/,''))}</h${Math.min(level,4)}>`}return `<p>${esc(x).replace(/\n/g,'<br>')}</p>`}).join('\n');
+return `<!DOCTYPE html><html lang="${$('language').value}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(seo)}</title><meta name="description" content="${esc(meta)}"><meta name="keywords" content="${esc(kw)}">${validUrl(canonical)?`<link rel="canonical" href="${esc(canonical)}">`:''}<style>body{font-family:system-ui,Arial,sans-serif;max-width:850px;margin:40px auto;padding:0 20px;line-height:1.8;color:#202b3c}h1{line-height:1.25}p{margin:1em 0;color:#344256}article{overflow-wrap:anywhere}</style></head><body><main><article><h1>${esc(t)}</h1>${content}</article></main></body></html>`}
+function download(){let blob=new Blob([postHtml()],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=($('slug').value.trim().replace(/[^a-z0-9-_]+/gi,'-')||'post')+'.html';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);$('message').textContent='HTML ফাইল ডাউনলোড শুরু হয়েছে।'}
+async function copy(s){try{await navigator.clipboard.writeText(s);$('message').textContent='Clipboard-এ কপি হয়েছে।'}catch(e){let t=document.createElement('textarea');t.value=s;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();$('message').textContent='কপি করার চেষ্টা করা হয়েছে।'}}
+function metaTags(){return `<title>${esc($('seoTitle').value)}</title>\n<meta name="description" content="${esc($('metaDesc').value)}">\n<meta name="keywords" content="${esc($('keywords').value)}">\n${validUrl($('canonical').value.trim())?`<link rel="canonical" href="${esc($('canonical').value.trim())}">`:''}`}
+['postTitle','postBody','seoTitle','metaDesc','keywords','canonical','slug','language'].forEach(id=>$(id).addEventListener('input',update));
+$('checkSeo').onclick=update;$('download').onclick=download;$('download2').onclick=download;$('copyHtml').onclick=()=>copy(postHtml());$('copyMeta').onclick=()=>copy(metaTags());
+$('makeTitle').onclick=()=>{let t=$('postTitle').value.trim();$('seoTitle').value=(t.length>60?t.slice(0,57).trimEnd()+'...':t);update()};
+$('makeMeta').onclick=()=>{let body=$('postBody').value.replace(/\s+/g,' ').trim();$('metaDesc').value=body.slice(0,155);update()};
+$('searchBtn').onclick=()=>{let q=$('searchQuery').value.trim(),body=$('postBody').value;if(!q){$('searchResults').innerHTML='<div class="hint">সার্চ করার জন্য শব্দ লিখুন।</div>';return}let lower=body.toLowerCase(),needle=q.toLowerCase(),pos=0,found=[];while((pos=lower.indexOf(needle,pos))!==-1&&found.length<10){let start=Math.max(0,pos-75),end=Math.min(body.length,pos+q.length+100);found.push(body.slice(start,end));pos+=needle.length||1} $('searchResults').innerHTML=found.length?`<div class="status">${found.length}টি matching snippet পাওয়া গেছে</div>`+found.map(s=>`<div class="search-result"><div class="result-url">Current post · match</div><div class="result-desc">…${esc(s)}…</div></div>`).join(''):'<div class="hint">এই পোস্টে শব্দটি পাওয়া যায়নি।</div>'};
+$('clearSearch').onclick=()=>{$('searchQuery').value='';$('searchResults').innerHTML='<div class="hint">সার্চ করার জন্য একটি শব্দ লিখুন।</div>'};
+$('reset').onclick=()=>{if(confirm('সব পরিবর্তন মুছে ডিফল্ট অবস্থায় ফিরবেন?'))location.reload()};
+update();
+</script>
+</body></html>
